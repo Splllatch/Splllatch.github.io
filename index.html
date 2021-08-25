@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mariage de Lisa et Maxime</title>
+	<link rel="stylesheet" href="mariage.css" />
+	<script src="mariage.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+</head>
+
+
+
+<body>
+	<div class="loader">
+		<span class="lettre">B</span>
+		<span class="lettre">I</span>
+		<span class="lettre">E</span>
+		<span class="lettre">N</span>
+		<span class="lettre">V</span>
+		<span class="lettre">E</span>
+		<span class="lettre">N</span>
+		<span class="lettre">U</span>
+		<span class="lettre">E</span>
+	</div>
+
+
+
+	<header>
+
+		<div class="en_tete">
+			<button id="bouton">
+				<div id="logo_sommaire">
+					<p class="somm">___</p>
+					<p class="somm1">___</p>
+				</div>
+			</button>
+			<div id="LM">LISA et MAXIME</div>
+			<a href="" id="logo-top" title="Retour">
+				<img id="logo" src="logoNB.png">
+			</a>
+			<div id="date">17 AOÛT 2022</div>
+		</div>
+
+		
+
+
+
+
+		<div class="sommaire">
+			<nav class="navbar">
+				<ul class="navbar-menu">
+					<li class="navbar-item">
+						<a href="#section1" class="navbar-link">
+							<img src="horaire.png" id="logoHoraire">
+							<span class="navbar-onglet">Date et lieux</span>
+						</a>
+					</li>
+					<li class="navbar-item">
+						<a href="#section2" class="navbar-link">
+							<img src="coeur.png" >
+							<span class="navbar-onglet">Programme</span>
+						</a>
+					</li>
+					<li class="navbar-item">
+						<a href="#section3" class="navbar-link">
+							<img src="lieu.png" id="logoCouchage">
+							<span class="navbar-onglet">Couchages</span>
+						</a>
+					</li>
+					<li class="navbar-item">
+						<a href="#section4" class="navbar-link">
+							<img src="picto_covoit.png" id="logoCovoit">
+							<span class="navbar-onglet">Covoiturage</span>
+						</a>
+					</li>
+					<li class="navbar-item">
+						<a href="#section5" class="navbar-link">
+							<img src="picto_voyage.png" id="logoVoyage">
+							<span class="navbar-onglet">Voyage de noce</span>
+						</a>
+					</li>
+					<li class="navbar-item">
+						<a href="#section6" class="navbar-link">
+							<img src="picto_contact.png" id="logoContact">
+							<span class="navbar-onglet">Contact</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="petiteBordure"></div>
+			<div id="transparent"></div>
+		</div>
+	</header>
+
+
+	<div id="compte_rebour">
+		<div class="timer">
+			<div id="days" class="nombre"></div>
+			<div id="jours" class="decompte"></div>
+		</div>
+		<div class="separateur">:</div>
+		<div class="timer">
+			<div id="hours" class="nombre">></div>
+			<div id="heures" class="decompte"></div>
+		</div>
+		<div class="separateur">:</div>
+		<div class="timer">
+			<div id="minutes" class="nombre">></div>
+			<div id="min" class="decompte"></div>
+		</div>
+		<div class="separateur">:</div>
+		<div class="timer">
+			<div id="secondes" class="nombre">></div>
+			<div id="sec" class="decompte"></div>
+		</div>
+	</div>
+
+	<section class="parallax">	</section>
+
+
+	<section id="section1">
+		<div   class="cacheEnTete"></div>
+		<section  class="ongletGauche">
+			<div class="detail">
+				<div  id="titre_ceremonie" class="titre">Date et lieux</div>
+				<p class="texte" id="SectionDate">
+				</br>
+						<strong>17 août 2022 </strong></br>
+					</br>	
+					<a href="https://www.google.fr/maps/search/Mairie+de+Coublevie+11+chemin+d%E2%80%99Orgeoise+38500+Coublevie/@45.3541384,5.6100001,17z/data=!3m1!4b1" target="_blank" class="adresseCeremonie">
+						Mairie de Coublevie 11 chemin d’Orgeoise </br>					
+						38500 Coublevie </br> </a>			
+
+					</br>
+						<strong>puis</strong> </br>
+					</br>
+					<a href="https://www.google.com/maps/place/La+Grange+aux+F%C3%A9es/@45.2143898,5.5741119,17z/data=!3m1!4b1!4m5!3m4!1s0x478aec45f7f235e5:0xe04424eb1b8ac47b!8m2!3d45.2143632!4d5.5763968" target="_blank" class="adresseCeremonie">
+						La Grange aux Fées </br>
+						5183 route de la Sûre </br>					
+						38880 Autrans </br>	
+					</a>
+				</p>
+			</div>
+			<img class="imageOnglet" src="cérémoniemairie.png">
+		</section>
+	</section>
+
+	<section id="section2">
+		<div  class="cacheEnTete"></div>
+		<section  class="ongletDroit" >
+			<img class="imageOnglet" src="grange.png">
+			<div class="detail">
+				<div id="titre_date" class="titre">Déroulement de la journée</div>
+				<p class="texte">Cette journée, que l’on espère belle, se déroulera en deux temps.</br>	
+				</br>	
+					D'abord, la cérémonie civile prendra place à la mairie de <strong>Coublevie</strong>  .
+					Pas d’inquiétude pour vous stationner, il y a un <strong>parking</strong> en libre accès sur place. 
+					À l’issue de cette première partie, quelques <strong>photos</strong> de groupe seront prises, puis tout le monde pourra prendre la direction du Vercors ! *youpi*</br>
+				</br>					
+					Il faut compter <strong>1h de route</strong> pour vous rendre jusqu’à la Grange aux Fées, à <strong>Autrans</strong>. 
+					La route est belle, un peu sinueuse, prenez votre temps. Une fois au gîte, chacun et chacune 
+					pourrez découvrir vos chambres pour la nuit, ainsi que vous rafraîchir ou, peut-être, passer 
+					une petite laine. Nous nous retrouverons ensuite pour la <strong>cérémonie laïque</strong>. </br>	
+				</br>	
+				Une fois celle-ci terminée et les larmes essuyées, il sera (enfin) temps de <strong>trinquer</strong> ! Le vin d’honneur, le repas et la 
+					bamboche jusqu’au petit jour se dérouleront également sur place.
+					Concernant le repas, pour tout régime alimentaire particulier, merci de nous en faire part. 
+				</p>
+			</div>	
+		</section>
+	</section>
+
+	<section id="section3">
+		<div  class="cacheEnTete"></div>
+		<section class="ongletGauche" >
+			<div class="detail">
+				<div  class="titre">Couchages</div>
+				<p class="texte">
+					Pour ceux qui viennent de <strong>loin</strong>, vous trouverez facilement à vous loger sur Voiron ou dans le Pays Voironnais pour la nuit qui précèdent le mariage. 
+					N’hésitez pas à nous consulter pour des idées ou conseils. </br>
+				</br>
+					Quant à la nuit du 17 au 18 août, le gîte de la Grange aux Fées ainsi que le gîte de groupe Des 4 temps nous permettent de loger tout le monde sur place ! 
+					<strong>*joie et bonheur*</strong>  </br>
+				</br>
+					Vous allez me dire « Mais, enfin, pourquoi prévoir de quoi se coucher si l’on prévoit de ne pas dormir ? » 
+					Eh bien comme mieux vaut prévenir et afin de pouvoir <strong>festoyer</strong> en toute liberté sans la contrainte de reprendre le volant ou de faire de la route, 
+					vous pouvez, si vous le souhaitez, <strong>rester sur place</strong>. </br>
+				</br>
+					Nous vous demanderons alors une petite participation financière (rien d’indécent promis).
+					Même si on ne vous verra pas dans le Vercors, sauter à l’élastique, on vous offre l’opportunité d’y passer une douce nuit d’été. 
+					Et ça, c’est quand même cool.
+				</p>
+			</div>
+				<img class="imageOnglet" src="chambre.png">
+			
+		</section>
+	</section>
+
+	<section id="section4" >
+		<div  class="cacheEnTete"></div>
+		<section  class="ongletDroit" >
+			<img class="imageOnglet" src="Covoit.png">
+			<div class="detail">
+				<div id="titre_couchage" class="titre">Covoiturage</div>
+				<p class="texte">
+					Pour ceux qui rejoindraient l’Isère par les chemins de fer, nous essaieront de <strong>favoriser</strong> le covoiturage. </br>
+				</br>
+					Donc, si vous avez besoin d’être transportés ou si vous pouvez accueillir des non locaux (bouh) dans votre automobile, <strong>faites-nous signe !</strong>  </br>
+				</br>
+					Qu’il s’agisse de vous récupérer en amont du mariage ou de vous permettre de rejoindre Autrans, <strong>on s’arrangera !</strong> 
+				</p>
+			</div>
+		</section>
+	</section>
+
+	<section id="section5" >
+		<div  class="cacheEnTete"></div>
+		<section  class="ongletGauche" >
+			<div class="detail">
+				<div id="titre_voyage" class="titre">Et après ?</div>
+				<p class="texte">
+					Pour les petits <strong>curieux</strong>  qui s’interrogeraient sur la suite des événements pour nous, voici un aperçu du <strong>voyage</strong>  que nous aimerions entreprendre. </br>
+				</br>
+				<strong>Rejoindre</strong>  Moscou depuis Paris <strong>en train</strong>, puis la Chine, le Japon, Singapour … </br>
+				</br>
+				<strong>Objectif final :</strong>  un Permis Vacances Travail en <strong>Nouvelle-Zélande !</strong> 
+				</p>
+				<img class="villesEtapes" src="Parcours.png">
+			</div>
+			<img class="imageOnglet" src="Voyage.png">
+		</section>
+	</section>
+
+	<section id="section6">
+		<section class="contactGauche">
+			<div class="detailsTitre"> Le marié </div>
+			<div class="detailsContact" > 
+				</br>  Maxime Gastellier </br> 
+				</br> 
+				06 29 27 08 27</br>
+				</br> 
+				<a href="mailto:maxime.gastellier@hotmail.fr" class="adresseMail">maxime.gastellier@hotmail.fr </a>
+				</br> 
+			</div>
+			
+		</section>
+
+		<img class="pictoContact" src="image couple 2.jpg">
+		
+		<section class="contactDroit">
+			<div class="detailsTitre"> La mariée</div>
+			<div class="detailsContact" > 
+				</br>  Lisa Mollier</br> 
+				</br> 
+				06 47 96 58 46</br>
+				</br> 
+				<a href="mailto:mollier.lisa@gmail.com" class="adresseMail"> mollier.lisa@gmail.com</a>
+				 
+				</br> 
+			</div>
+		</section>
+
+
+		
+	</section>
+
+	
+	<img src="bannierebasdepage.png" class="imageFin">
+
+
+
+</body>
+
+</html>	

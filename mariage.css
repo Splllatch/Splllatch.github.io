@@ -1,0 +1,583 @@
+﻿:root
+{
+    --couleurOr : rgba(207, 164, 41,0.9);
+    --policeTitre : 'DK Lemon Yellow Sun';
+    --policeTexte : 'CaviarDreams';
+}
+
+@font-face
+{
+   font-family: 'DK Lemon Yellow Sun';
+   src: url("font/DK\ Lemon\ Yellow\ Sun.otf") format("truetype");
+
+}
+
+@font-face {
+
+    font-family: 'CaviarDreams';
+    src: url("font/CaviarDreams.ttf") format("truetype");
+}
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.loader
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.lettre
+{
+   color : #464646 ;
+   font-size: 80px;
+   letter-spacing: 15px;
+   animation: flash 3s linear infinite;
+   font-family: var(--policeTitre);
+   
+}
+
+@keyframes flash {
+    0% {
+        color : var(--couleurOr);
+        text-shadow: 0 0 7px var(--couleurOr);
+        
+    }
+    90% {
+        color : #464646;
+       
+    }
+}
+
+.lettre:nth-child(1) {
+    animation-delay : 0.1s;
+    
+}
+
+.lettre:nth-child(2) {
+    animation-delay : 0.2s;
+}
+
+.lettre:nth-child(3) {
+    animation-delay : 0.3s;
+    
+}
+
+.lettre:nth-child(4) {
+    animation-delay : 0.4s;
+}
+
+.lettre:nth-child(5) {
+    animation-delay : 0.5s;
+}
+
+.lettre:nth-child(6) {
+    animation-delay : 0.6s;
+}
+
+.lettre:nth-child(7) {
+    animation-delay : 0.7s;
+}
+
+.lettre:nth-child(8) {
+    animation-delay : 0.8s;
+}
+
+.lettre:nth-child(9) {
+    animation-delay : 0.9s;
+}
+
+.loader.fondu_out{
+    opacity : 0;
+    transition: opacity 2.5s 1s ;
+}
+
+
+
+.en_tete
+{
+    border-bottom: solid black;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    transition: all 1s ease-in-out;
+    left: 0;
+    position: relative;
+    
+   
+}
+
+.en_tete.scroll
+{
+    background-color: white;
+}
+
+#bouton
+{
+    width: 70px;
+    border-right: SOLID  thin black;
+    border-bottom: WHITE;
+    border-top: white;
+    border-left: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#logo_sommaire
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.somm
+{
+    transform: rotate(0deg);
+    font-weight: bold;
+    margin-top: 0;
+    position: absolute;
+    transition:  .5s ;    
+}
+
+.somm1
+{
+    position: absolute;
+    margin-top: 15px;
+    transform: rotate(0deg);
+    font-weight: bold;
+    transition:  .5s  ;
+    
+    
+}
+.somm1.after
+{
+    
+    transform: rotate(45deg);
+    transition:  .5s  ;
+    margin-top: -10px;
+    padding-left: 12px;
+    
+}
+
+.somm.after
+{
+    
+    transform: rotate(-45deg);
+    transition:  .5s  ;
+    margin-top: -10px;
+    padding-right: 12px;
+}
+
+
+
+#bouton:hover
+{
+    background-color: var(--couleurOr) ;
+    
+}
+#date
+{
+    position: absolute;
+    left: 65% ;
+    width: 20%;
+    text-align: center;
+    font-family: var(--policeTitre);
+    font-style:oblique;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    top: 30%;
+}
+
+#LM
+{
+    position: absolute;
+    left: 15%;    
+    width: 20%;
+    text-align: center;
+    font-family: var(--policeTitre);
+    font-style:oblique;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+#logo-top 
+{
+    text-align: center;
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 1; 
+    z-index: 10;
+}
+
+#logo
+{
+    
+    width: 200px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 2000px){
+    #LM , #date{
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    #LM, #date{
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #LM, #date{
+        top: 40px;
+    }
+}
+
+
+.sommaire
+{
+    display: none;
+}
+
+.sommaire.after
+{
+    display: flex; 
+}
+
+
+
+.navbar
+{ 
+    width: 500px;
+    background-color: white; 
+    border-right: double var(--couleurOr);  
+    border-bottom: double var(--couleurOr);   
+}
+
+.navbar-menu
+{
+    list-style: none;
+    padding: 0;
+}
+
+
+.navbar-item
+{
+    display: flex;
+    margin : 10px;  
+}
+
+.navbar-link
+{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 70px;	
+	width: 100%;	
+	text-decoration: none;
+    font-family: var(--policeTitre);
+    color:#333;
+    font-size: 25px;
+}
+
+.navbar-link:hover
+{
+    color:var(--couleurOr);
+}
+
+.navbar-link img
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+#logoHoraire
+{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    padding: 30px;
+}
+
+#logoCouchage
+{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    padding: 27px;
+}
+
+#logoVoyage
+{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    padding: 30px;
+}
+
+#logoCovoit
+{
+    display: flex;
+    align-items: center;
+    height: 55%;
+    padding: 28px;
+}
+
+#petiteBordure
+{ 
+    width: 20px;
+    background-color: var(--couleurOr);
+}
+
+#transparent
+{
+    width: 100% ;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+#compte_rebour {
+    width: 100%;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--policeTitre);
+
+}
+
+.separateur{
+    font-size : 45px;
+}
+
+.nombre {
+    padding-right: 15px;
+    padding-left : 15px;
+    text-align: center;
+    font-size : 50px;
+    color : var(--couleurOr);
+}
+
+.decompte
+{
+    height : 15px;
+    text-align : center;
+}
+
+
+.parallax {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 18vw;
+    background-image:  url('bannieremoyenne.png') ;
+    background-repeat: no-repeat;
+    background-position : center;
+    background-size: 100%;
+    
+    
+}
+
+
+.titre
+{
+    text-align: center;
+    font-family: var(--policeTitre);
+    font-size: 3vw;
+    padding-top: 1vw;
+
+}
+
+    
+
+.texte
+{
+    
+    font-family: var(--policeTexte);
+    font-size: 1.3vw;
+    text-align: justify ;
+    padding : 1vw;
+    width: 55vw;
+}
+
+#SectionDate
+{
+    text-align: center;
+}
+
+.adresseCeremonie
+{
+    text-decoration: none;
+    color:#333; 
+}
+
+.adresseCeremonie:hover
+{
+    color:var(--couleurOr)
+}
+
+
+
+
+
+.ongletGauche
+{
+    border-top: solid var(--couleurOr);
+    border-left: solid var(--couleurOr);
+    border-radius: 20px  20px  0px  0px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1vw;
+    
+}
+
+.ongletDroit
+{
+    border-top: solid var(--couleurOr);
+    border-right: solid var(--couleurOr);
+    border-radius: 20px  20px  0px  0px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1vw;
+}
+
+
+
+.imageOnglet
+{
+    
+    
+    padding : 1vw ;
+    height: 20vw;
+    margin-top: 6.5vw;
+    border-radius: 2vw;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+}
+
+.imageOnglet:hover{
+    height: 22vw;
+    padding: 0px;
+}
+
+.cacheEnTete
+{
+    height: 13vw;
+    width: 100%;
+}
+
+.villesEtapes
+{
+    width: 80%;
+   
+    
+}
+
+#section6
+{
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.detailsTitre
+{
+    width: 32vw;
+    font-family: var(--policeTitre);
+    font-size: 2vw;
+   
+}
+
+.detailsContact
+{
+    font-family: var(--policeTexte);
+    font-size: 1vw;
+   
+}
+
+.contactGauche
+{
+    border-bottom: solid var(--couleurOr);
+    border-left: solid var(--couleurOr);
+    border-radius: 20px  0px  0px  20px;
+    padding: 1vw;
+    
+}
+
+.contactDroit
+{
+    border-top: solid var(--couleurOr);
+    border-right: solid var(--couleurOr);
+    border-radius: 0px  20px  20px  0px;
+    padding: 1vw;
+}
+
+.pictoContact
+{
+    position: absolute;
+    margin-top: 2vw;
+    height: 8vw;
+    
+
+
+}
+
+.adresseMail
+{
+    text-decoration: none;
+    font-weight: bold;
+    color:#333;
+   
+}
+
+.adresseMail:hover
+{
+    color:var(--couleurOr)
+}
+
+.imageFin
+{
+    border-radius: 1vw;
+    margin-bottom: 5vw;
+    margin-left: 10%;
+    width: 80%;
+}
