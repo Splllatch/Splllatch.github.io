@@ -132,18 +132,7 @@ header
     background-color: white;
 }
 
-#bouton
-{
-    width: 6vw;
-    border-right: SOLID  thin black;
-    border-bottom: WHITE;
-    border-top: white;
-    border-left: white; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
 
 #logo_sommaire
 {
@@ -249,7 +238,90 @@ header
     #LM , #date{
         top: 20px;
     }
+
+    .texte
+    {font-family: var(--policeTexte);
+    font-size: 1.3vw;
+    text-align: justify ;
+    padding : 1vw;
+    width: 55vw;}
+
+    #bouton
+    {
+    width: 6vw;
+    border-right: SOLID  thin black;
+    border-bottom: WHITE;
+    border-top: white;
+    border-left: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+
+
+    .ongletGauche
+    {
+    border-top: solid var(--couleurOr);
+    border-left: solid var(--couleurOr);
+    border-radius: 20px  20px  0px  0px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1vw;
+    
+    }
+
+    .ongletDroit
+    {
+        border-top: solid var(--couleurOr);
+        border-right: solid var(--couleurOr);
+        border-radius: 20px  20px  0px  0px;
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 1vw;
+    }
+
+
+    .imageOnglet{               
+        padding : 1vw ;
+        height: 20vw;
+        margin-top: 6.5vw;
+        border-radius: 2vw;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+
+    .imageOnglet:hover{
+        height: 22vw;
+        padding: 0px;
+    }
+
+
+
+    .titre{
+        text-align: center;
+        font-family: var(--policeTitre);
+        font-size: 3vw;
+        padding-top: 1vw;
+    }
+
+
+    .villesEtapes{
+    width: 80%;   
+    }
+
 }
+
+
+
+
+
 
 @media screen and (max-width: 1600px){
     #LM, #date{
@@ -262,17 +334,52 @@ header
         top: 40px;
     }
 
-    .texte
-{
-    
+    .texte{   
     font-family: var(--policeTexte);
     font-size: 3vw;
     text-align: justify ;
-    padding : 1vw;
-    width: 55vw;
-    color : red;
+    padding : 0.5vw;
+    margin: auto;
+    
 }
 
+    #bouton{
+        width: 12vw;
+    }
+
+    .ongletDroit{
+        display: block;        
+        text-align: center;
+    }
+
+    .ongletGauche{
+        display: block;        
+        text-align: center;
+    }
+
+    .imageOnglet{
+        align-items: center;
+        height: 40vw;        
+    }
+
+    .imageOnglet:hover{
+        height: 40vw;
+        padding : 1vw ;
+        
+    }
+
+    .titre{
+        text-align: center;
+        font-family: var(--policeTitre);
+        font-size: 6vw;
+        padding-top: 1vw;
+        margin-bottom: 4vw;
+    }
+
+    .villesEtapes{
+        height: 15vw;
+        margin-top: 4vw;  
+        }
 
 }
 
@@ -422,26 +529,11 @@ header
 }
 
 
-.titre
-{
-    text-align: center;
-    font-family: var(--policeTitre);
-    font-size: 3vw;
-    padding-top: 1vw;
 
-}
 
     
 
-.texte
-{
-    
-    font-family: var(--policeTexte);
-    font-size: 1.3vw;
-    text-align: justify ;
-    padding : 1vw;
-    width: 55vw;
-}
+
 
 #SectionDate
 {
@@ -463,51 +555,8 @@ header
 
 
 
-.ongletGauche
-{
-    border-top: solid var(--couleurOr);
-    border-left: solid var(--couleurOr);
-    border-radius: 20px  20px  0px  0px;
-    display: flex;
-    width: 80%;
-    margin: auto;
-    padding-bottom: 1vw;
-    
-}
-
-.ongletDroit
-{
-    border-top: solid var(--couleurOr);
-    border-right: solid var(--couleurOr);
-    border-radius: 20px  20px  0px  0px;
-    display: flex;
-    width: 80%;
-    margin: auto;
-    padding-bottom: 1vw;
-}
 
 
-
-.imageOnglet
-{
-    
-    
-    padding : 1vw ;
-    height: 20vw;
-    margin-top: 6.5vw;
-    border-radius: 2vw;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-
-}
-
-.imageOnglet:hover{
-    height: 22vw;
-    padding: 0px;
-}
 
 .cacheEnTete
 {
