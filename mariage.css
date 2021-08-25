@@ -184,9 +184,7 @@ header
 
 
 @media screen and (max-width: 2000px){
-    #LM , #date{
-        top: 20px;
-    }
+
 
     .texte
     {font-family: var(--policeTexte);
@@ -392,12 +390,16 @@ header
 @media screen and (max-width: 1600px){
     #LM, #date{
         top: 30px;
+
+        
     }
 }
 
 @media screen and (max-width: 1100px){
     #LM, #date{
-        top: 40px;
+        top: 4vw;
+        font-size: 5vw;
+        text-align: center ;
     }
 
     .texte{   
