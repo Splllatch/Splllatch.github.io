@@ -134,7 +134,7 @@ header
 
 #bouton
 {
-    width: 70px;
+    width: 6vw;
     border-right: SOLID  thin black;
     border-bottom: WHITE;
     border-top: white;
@@ -261,6 +261,8 @@ header
     #LM, #date{
         top: 40px;
     }
+
+
 }
 
 
