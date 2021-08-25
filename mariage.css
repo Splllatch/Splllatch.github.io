@@ -262,6 +262,17 @@ header
         top: 40px;
     }
 
+    .texte
+{
+    
+    font-family: var(--policeTexte);
+    font-size: 3vw;
+    text-align: justify ;
+    padding : 1vw;
+    width: 55vw;
+    color : red;
+}
+
 
 }
 
