@@ -373,6 +373,15 @@ header
     }
 
 
+    .imageFin
+    {
+    border-radius: 1vw;
+    margin-bottom: 5vw;
+    margin-left: 10%;
+    width: 80%;
+    }
+
+
 }
 
 
@@ -481,6 +490,15 @@ header
         position: relative;
         margin-top: 2vw;
         height: 20vw;
+    }
+
+
+    .imageFin{
+        
+        width: 90%;
+        margin-left: 5%;
+    
+
     }
 
     
@@ -665,10 +683,3 @@ header
 
 
 
-.imageFin
-{
-    border-radius: 1vw;
-    margin-bottom: 5vw;
-    margin-left: 10%;
-    width: 80%;
-}
