@@ -49,8 +49,8 @@ header
 .lettre
 {
    color : #464646 ;
-   font-size: 80px;
-   letter-spacing: 15px;
+   font-size: 10vw;
+   letter-spacing: 3vw;
    animation: flash 3s linear infinite;
    font-family: var(--policeTitre);
    
@@ -473,8 +473,8 @@ header
 
     .navbar
     { 
-    width: 80vw;
-    background-color: white; 
+    width: 100vw;
+    background-color: blue; 
     border-right: double var(--couleurOr);  
     border-bottom: double var(--couleurOr);   
     }
