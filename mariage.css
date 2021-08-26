@@ -447,6 +447,12 @@ header
     width: 80%;
     }
 
+    .cacheEnTete
+    {
+    height: 13vw;
+    width: 100%;
+    }
+
 
 }
 
@@ -467,7 +473,7 @@ header
 
     .navbar
     { 
-    width: 70vw;
+    width: 80vw;
     background-color: white; 
     border-right: double var(--couleurOr);  
     border-bottom: double var(--couleurOr);   
@@ -483,6 +489,22 @@ header
     font-family: var(--policeTitre);
     color:#333;
     font-size: 6vw;
+    }
+
+    .navbar-link img
+    {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    padding: 10px;
+    }   
+
+    #logoHoraire
+    {
+    display: flex;
+    align-items: center;
+    height: 35%;
+    padding: 15px;
     }
 
     #logoCouchage
@@ -514,7 +536,7 @@ header
 
 
     #LM, #date{
-        top: 4vw;
+        top: 8vw;
         font-size: 5vw;
         text-align: center ;
     }
@@ -616,9 +638,13 @@ header
         
         width: 90%;
         margin-left: 5%;
-    
-
     }
+
+    .cacheEnTete
+    {
+    height: 20vw;
+    width: 100%;
+    }   
 
     
 
@@ -726,11 +752,7 @@ header
 
 
 
-.cacheEnTete
-{
-    height: 13vw;
-    width: 100%;
-}
+
 
 .villesEtapes
 {
