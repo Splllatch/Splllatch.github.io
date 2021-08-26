@@ -338,8 +338,9 @@ header
     #bouton:hover
     {
         background-color: var(--couleurOr) ;
-        
     }
+
+
     #date
     {
         position: absolute;
@@ -493,7 +494,7 @@ header
 
     .navbar
     { 
-    width: 100vw;
+    width: 150vw;
     background-color: white; 
     border-right: double var(--couleurOr);  
     border-bottom: double var(--couleurOr);   
@@ -572,9 +573,25 @@ header
     
 }
 
-    #bouton{
-        width: 12vw;
+
+    #bouton
+    {
+    width: 14vw;
+    border-right: SOLID  thin black;
+    border-bottom: WHITE;
+    border-top: white;
+    border-left: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
+
+    #bouton:hover
+    {
+        background-color: var(--couleurOr) ;
+    }
+
+
 
     .ongletDroit{
         display: block;        
