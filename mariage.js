@@ -83,9 +83,11 @@ boutton.onclick = () => {
   window.addEventListener('scroll', () => {
   if(window.scrollY > 5){
     petit_logo()
+    
   }
   else{
     gros_logo()
+    boutton.style.backgroundColor = 'none'
   }
   })
 
