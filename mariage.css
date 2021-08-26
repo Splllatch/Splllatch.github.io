@@ -206,6 +206,52 @@ header
     font-size: 2vw;
     }
 
+    .navbar-link img
+    {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    }   
+
+    #logoHoraire
+    {
+    display: flex;
+    align-items: center;
+    height: 70%;
+    padding: 30px;
+    }
+
+    #logoCouchage
+    {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    padding: 27px;
+    }   
+
+    #logoVoyage
+    {
+    display: flex;
+    align-items: center;
+    height: 70%;
+    padding: 30px;
+    }
+
+    #logoCovoit
+    {
+    display: flex;
+    align-items: center;
+    height: 55%;
+    padding: 28px;
+    }
+
+    #petiteBordure
+    { 
+    width: 20px;
+    background-color: var(--couleurOr);
+    }
+
 
 
     .texte
@@ -418,6 +464,55 @@ header
 }
 
 @media screen and (max-width: 1100px){
+
+    .navbar
+    { 
+    width: 70vw;
+    background-color: white; 
+    border-right: double var(--couleurOr);  
+    border-bottom: double var(--couleurOr);   
+    }
+
+    .navbar-link
+    {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;	
+	width: 100%;	
+	text-decoration: none;
+    font-family: var(--policeTitre);
+    color:#333;
+    font-size: 6vw;
+    }
+
+    #logoCouchage
+    {
+    display: flex;
+    align-items: center;
+    height: 40%;
+    padding: 13.5px;
+    }   
+
+    #logoVoyage
+    {
+    display: flex;
+    align-items: center;
+    height: 35%;
+    padding: 15px;
+    }
+
+    #logoCovoit
+    {
+    display: flex;
+    align-items: center;
+    height: 27.5%;
+    padding: 14px;
+    }
+
+
+
+
+
     #LM, #date{
         top: 4vw;
         font-size: 5vw;
@@ -564,51 +659,7 @@ header
     color:var(--couleurOr);
 }
 
-.navbar-link img
-{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 20px;
-}
 
-#logoHoraire
-{
-    display: flex;
-    align-items: center;
-    height: 70%;
-    padding: 30px;
-}
-
-#logoCouchage
-{
-    display: flex;
-    align-items: center;
-    height: 80%;
-    padding: 27px;
-}
-
-#logoVoyage
-{
-    display: flex;
-    align-items: center;
-    height: 70%;
-    padding: 30px;
-}
-
-#logoCovoit
-{
-    display: flex;
-    align-items: center;
-    height: 55%;
-    padding: 28px;
-}
-
-#petiteBordure
-{ 
-    width: 20px;
-    background-color: var(--couleurOr);
-}
 
 #transparent
 {
