@@ -59,13 +59,16 @@ window.addEventListener('load', () => {
 
   
 boutton.onclick = () => {
+  
   if(som == true)
   {    
+    boutton.style.backgroundColor = 'var(--couleurOr)'
     sommaire_visible()
     petit_logo();
   }
   else 
   {
+    boutton.style.backgroundColor = 'white'
     sommaire_cache()
       if(window.scrollY > 10){
         petit_logo()
@@ -81,12 +84,14 @@ boutton.onclick = () => {
   }
 
   window.addEventListener('scroll', () => {
+    boutton.style.backgroundColor = 'white'
   if(window.scrollY > 5){
     petit_logo()
     
   }
   else{
     gros_logo()
+    
   }
   })
 

@@ -264,17 +264,7 @@ header
     padding : 1vw;
     width: 55vw;}
 
-    #bouton
-    {
-    width: 6vw;
-    border-right: SOLID  thin black;
-    border-bottom: WHITE;
-    border-top: white;
-    border-left: white; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+
 
 
 
@@ -332,6 +322,19 @@ header
 
     .villesEtapes{
     width: 80%;   
+    }
+
+
+    #bouton
+    {
+    width: 6vw;
+    border-right: SOLID  thin black;
+    border-bottom: WHITE;
+    border-top: white;
+    border-left: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
 
 
@@ -481,9 +484,12 @@ header
 
         
     }
+
+
+
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 500px){
 
 
     .lettre
@@ -498,6 +504,7 @@ header
     background-color: white; 
     border-right: double var(--couleurOr);  
     border-bottom: double var(--couleurOr);   
+    z-index: 999;
     }
 
     .navbar-link
@@ -581,15 +588,13 @@ header
     border-bottom: WHITE;
     border-top: white;
     border-left: white; 
+    background-color: white ;
     display: flex;
     align-items: center;
     justify-content: center;
     }
 
-    #bouton:hover
-    {
-        background-color: white ;
-    }
+
 
 
 
@@ -652,7 +657,7 @@ header
         border-left: solid var(--couleurOr);
         border-radius: 20px  0px  0px  20px;
         padding: 1vw; 
-        margin-top: 4vw;  
+        margin-top: 15vw;  
         margin-bottom: 4vw;       
     }
 
@@ -669,6 +674,7 @@ header
         position: relative;
         margin-top: 2vw;
         height: 20vw;
+       
     }
 
 
@@ -680,7 +686,7 @@ header
 
     .cacheEnTete
     {
-    height: 20vw;
+    height: 30vw;
     width: 100%;
     }   
 
