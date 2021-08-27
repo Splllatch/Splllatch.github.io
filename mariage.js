@@ -87,7 +87,6 @@ boutton.onclick = () => {
   }
   else{
     gros_logo()
-    boutton.style.backgroundColor = 'none'
   }
   })
 
