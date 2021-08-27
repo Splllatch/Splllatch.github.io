@@ -588,7 +588,7 @@ header
 
     #bouton:hover
     {
-        background-color: var(--couleurOr) ;
+        background-color: white ;
     }
 
 
@@ -687,7 +687,7 @@ header
     .parallax {
         margin-top: 10vw;
         margin-bottom: 5vw;
-        height: 18vw;
+        height: 40vw;
         background-image:  url('bannieremoyenne.png') ;
         background-repeat: no-repeat;
         background-position : center;
