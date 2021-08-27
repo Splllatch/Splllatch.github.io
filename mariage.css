@@ -119,6 +119,25 @@ header
    
 }
 
+#bouton
+{
+width: 6vw;
+border-right: SOLID  thin black;
+border-bottom: WHITE;
+border-top: white;
+border-left: white; 
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#bouton:hover
+{
+    background-color: var(--couleurOr) ;
+}
+
+
 .en_tete.scroll
 {
     background-color: white;
@@ -175,7 +194,7 @@ header
 
 
 
-@media screen and (max-width: 2000px){
+@media screen and (max-width: 3000px){
 
 
     .lettre
@@ -325,23 +344,9 @@ header
     }
 
 
-    #bouton
-    {
-    width: 6vw;
-    border-right: SOLID  thin black;
-    border-bottom: WHITE;
-    border-top: white;
-    border-left: white; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
 
 
-    #bouton:hover
-    {
-        background-color: var(--couleurOr) ;
-    }
+
 
 
     #date
