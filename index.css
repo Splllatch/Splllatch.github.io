@@ -3,6 +3,7 @@
 {
     --GrisLight : rgb(233,233,233);
     --GrisDark : rgb(83,86,91);
+    --Cuivre : rgb(179,103,0);
 
 
 }
@@ -24,36 +25,38 @@ body {
     
     background-color: var(--GrisLight);
     color: var(--GrisDark);
-    height: 12vw;
+    height: 10vw;
     display: flex;
     align-items: center;
+   
 
 }
 
 .Texte {
 
-    padding-left: 20px;
+    padding-left: 2vw;
+    width: 20vw;
     
     
 }
 
 
 .Logo img{
-    width: 100px;
-    padding-left: 50px;
+    width: 6vw;
+    padding-left: 2vw;
 }
 
 .Nom {
  
-    font-size: 40px;
-    width: 15px;
-    line-height: 40px;
+    font-size: 2vw;
+    width: 0.5vw;
+    line-height: 2vw;
     
 }
 
 .Profession {
-padding-top: 10px;
- letter-spacing: 7px;
+
+letter-spacing: 0.4vw;
 
 }
 
@@ -63,5 +66,73 @@ padding-top: 10px;
     color: var(--GrisDark);
     display: flex   ;
     justify-content: space-around;
+    list-style: none;
+    width: 40vw;
+    font-size: 1vw;
+     
   
+}
+
+.Menu li  {
+
+    display: flex;
+    align-items:center ;
+    
+
+}
+
+
+#Réalisation {
+    height : 1.1vw;
+    padding-right: 0.5vw;
+    
+
+}
+
+#Contact {
+    height : 1.2vw;
+    padding-right: 0.5vw;
+    
+
+}
+
+#Acceuil {
+    height : 2.2vw;
+    padding-right: 0.5vw;
+    
+
+}
+
+#Galerie {
+    height : 1.3vw;
+    padding-right: 0.5vw;
+    
+
+}
+
+#téléphone {
+    margin-left: 10vw;
+    width: 8.5vw;
+    height: 2.5vw;  
+    font-size: 0.9vw; 
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+    border-radius: 1vw;
+    background-color: var(--GrisDark);
+    color: var(--GrisLight);
+    border: solid var(--GrisDark);
+}
+
+
+.Menu li:hover {
+    color : var(--Cuivre);
+    cursor: pointer;
+}
+
+#téléphone:hover {
+    color : var(--Cuivre);
+    border: solid var(--GrisDark);
+    background-color: var(--GrisLight);
+    cursor: pointer;
 }
