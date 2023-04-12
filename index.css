@@ -77,8 +77,11 @@ letter-spacing: 0.4vw;
 
     display: flex;
     align-items:center ;
-    
+}
 
+.Menu a {
+    color: var(--GrisDark);
+    text-decoration: none;
 }
 
 
@@ -125,7 +128,7 @@ letter-spacing: 0.4vw;
 }
 
 
-.Menu li:hover {
+.Menu a:hover {
     color : var(--Cuivre);
     cursor: pointer;
 }
