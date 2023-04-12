@@ -1,0 +1,67 @@
+
+:root
+{
+    --GrisLight : rgb(233,233,233);
+    --GrisDark : rgb(83,86,91);
+
+
+}
+
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Regular.ttf) format("truetype");
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.Bandeau {
+    
+    background-color: var(--GrisLight);
+    color: var(--GrisDark);
+    height: 12vw;
+    display: flex;
+    align-items: center;
+
+}
+
+.Texte {
+
+    padding-left: 20px;
+    
+    
+}
+
+
+.Logo img{
+    width: 100px;
+    padding-left: 50px;
+}
+
+.Nom {
+ 
+    font-size: 40px;
+    width: 15px;
+    line-height: 40px;
+    
+}
+
+.Profession {
+padding-top: 10px;
+ letter-spacing: 7px;
+
+}
+
+.Menu {
+
+    background-color: var(--GrisLight);
+    color: var(--GrisDark);
+    display: flex   ;
+    justify-content: space-around;
+  
+}
