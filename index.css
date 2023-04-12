@@ -28,6 +28,9 @@ body {
     height: 10vw;
     display: flex;
     align-items: center;
+    z-index: 999  ;
+    position : fixed;
+    width: 100%;
    
 
 }
@@ -69,6 +72,7 @@ letter-spacing: 0.4vw;
     list-style: none;
     width: 40vw;
     font-size: 1vw;
+
      
   
 }
@@ -139,3 +143,22 @@ letter-spacing: 0.4vw;
     background-color: var(--GrisLight);
     cursor: pointer;
 }
+
+.Photos {
+    position: relative;
+    z-index: 2  ;
+}
+#Menuisier {
+
+    width: 100%;
+    opacity: 0.6;
+    filter: grayscale(0.9);
+    filter: saturate(1);
+    position: absolute;
+    top: -50px;
+    z-index: 2  ;
+   
+    
+}
+
+html { overflow-y: hidden; } 
