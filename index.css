@@ -89,28 +89,72 @@ letter-spacing: 0.4vw;
 }
 
 
-#Réalisation {
+
+#Logo_Acceuil.On {
+    filter: opacity(0.6) drop-shadow(0 0 0 rgb(179,103,0));
+
+}
+
+#Logo_Réalisation.On {
+    filter: opacity(0.6) drop-shadow(0 0 0 rgb(179,103,0));
+
+}
+
+#Logo_Galerie.On {
+    filter: opacity(0.6) drop-shadow(0 0 0 rgb(179,103,0));
+
+}
+
+#Logo_Contact.On {
+    filter: opacity(0.6) drop-shadow(0 0 0 rgb(179,103,0));
+
+}
+
+
+
+#Titre_Acceuil.On {
+color: rgb(179,103,0);
+border-bottom: solid thin ;
+}
+
+#Titre_Réalisation.On {
+color: rgb(179,103,0);
+border-bottom: solid thin ;
+}
+
+#Titre_Galerie.On {
+color: rgb(179,103,0);
+border-bottom: solid thin ;
+}
+
+#Titre_Contact.On {
+color: rgb(179,103,0);
+border-bottom: solid thin ;
+}
+
+
+#Logo_Réalisation {
     height : 1.1vw;
     padding-right: 0.5vw;
     
 
 }
 
-#Contact {
+#Logo_Contact {
     height : 1.2vw;
     padding-right: 0.5vw;
     
 
 }
 
-#Acceuil {
+#Logo_Acceuil {
     height : 2.2vw;
     padding-right: 0.5vw;
     
 
 }
 
-#Galerie {
+#Logo_Galerie {
     height : 1.3vw;
     padding-right: 0.5vw;
     
