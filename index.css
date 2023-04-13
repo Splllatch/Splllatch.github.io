@@ -63,7 +63,7 @@ letter-spacing: 0.4vw;
 
 }
 
-.Menu {
+#Menu {
 
     background-color: var(--GrisLight);
     color: var(--GrisDark);
@@ -77,13 +77,13 @@ letter-spacing: 0.4vw;
   
 }
 
-.Menu li  {
+#Menu li  {
 
     display: flex;
     align-items:center ;
 }
 
-.Menu a {
+#Menu a {
     color: var(--GrisDark);
     text-decoration: none;
 }
@@ -144,9 +144,10 @@ letter-spacing: 0.4vw;
     cursor: pointer;
 }
 
-.Photos {
+#Section_Acceuil{
     position: relative;
     z-index: 2  ;
+    overflow: hidden;
 }
 #Menuisier {
 
@@ -156,9 +157,43 @@ letter-spacing: 0.4vw;
     filter: saturate(1);
     position: absolute;
     top: -50px;
-    z-index: 2  ;
-   
+    z-index: 1  ;
+ 
+}
+
+#Section_Réalisation {
+    padding-top: 10vw;
+    border: solid green;
+    position: relative;
+    height: 40vw;
     
 }
 
-html { overflow-y: hidden; } 
+#Section_Galerie {
+    padding-top: 10vw;
+    border: solid blue;
+    position: relative;
+    height: 40vw;
+    
+}
+
+#Section_Contact {
+    padding-top: 10vw;
+    border: solid red;
+    position: relative;
+    height: 40vw;
+    
+}
+
+#Section_Acceuil {
+    border: solid purple;
+    position: relative;
+    height: 50vw;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
