@@ -6,6 +6,9 @@ const LogoAcceuil = document.getElementById("Logo_Acceuil");
 const LogoRéalisation = document.getElementById("Logo_Réalisation");
 const LogoGalerie = document.getElementById("Logo_Galerie");
 const LogoContact = document.getElementById("Logo_Contact");
+const parallax1 = document.querySelector('.parallax1');
+const parallax2 = document.querySelector('.parallax2');
+const parallax3 = document.querySelector('.parallax3')
 
 
 
@@ -128,3 +131,16 @@ AcceuilObserver.observe(document.querySelector('.Acceuil'))
 RéalisationObserver.observe(document.querySelector('.Réalisation'))
 GalerieObserver.observe(document.querySelector('.Galerie'))
 ContactObserver.observe(document.querySelector('.Contact'))
+
+
+window.addEventListener('scroll', () => {
+    parallax1.style.backgroundPositionY = -window.scrollY / 6 + "px" 
+    })
+
+window.addEventListener('scroll', () => {
+    parallax2.style.backgroundPositionY = -window.scrollY / 6 + "px"   
+    })    
+
+window.addEventListener('scroll', () => {
+    parallax3.style.backgroundPositionY = -window.scrollY / 6 + "px"   
+    })      

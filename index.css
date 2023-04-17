@@ -243,42 +243,69 @@ html{
 
 .container {
     display :flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+  
 
 }
 
 .container div {
     margin-top: 5vw;
     padding-top : 5vw;
-    border: solid red;
     width : 20%;
     height: 15vw;
     text-align: center;
     border-radius: 2vw;
 }
 
-#MenuiserieInter {
-    color:black;
-    background-color:white;
-    background-image:url(images/Menuiserie_Inter.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
+.Titre_Presta {
+    color: white;
+    position: relative;
+    font-size:x-large;
     
 }
 
-#Ebeniste {
-    color:black;
-    background-color:white;
-    background-image:url(images/Ebeniste.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
-}
-#Cuisiniste {
-    color:black;
-    background-color:white;
-    background-image:url(images/Cuisine.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
+.Detail_Presta {
+    color : white;
+    position: relative;
+   
+  
 }
 
 
+.parallax1 {
+
+    background-image:  url('images/menuisier-reconversion.jpeg') ;    
+    transform: translate(-20%, -50%);
+    position: absolute;
+    opacity: 0.8;
+    filter: brightness(50%);
+    background-position: center;
+   
+ 
+}
+
+.parallax2 {
+
+    background-image:url(images/Ebeniste.jpg);    
+    background-position : center;  
+    transform: translate(-20%, -50%);
+    position: absolute;
+    opacity: 0.8;
+    filter: brightness(50%);
+      
+}
+
+
+.parallax3 {
+
+    background-image:url(images/Cuisine.jpg);    
+    background-position : center;  
+    transform: translate(-20%, -50%);
+    position: absolute;
+    opacity: 0.8;
+    filter: brightness(50%);
+    
+    
+}
