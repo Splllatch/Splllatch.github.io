@@ -207,31 +207,27 @@ border-bottom: solid thin ;
 
 #Section_Réalisation {
     padding-top: 10vw;
-    border: solid green;
     position: relative;
-    height: 40vw;
+    height: 35vw;
 
     
 }
 
 #Section_Galerie {
     padding-top: 10vw;
-    border: solid blue;
     position: relative;
-    height: 40vw;
+    height: 35vw;
     
 }
 
 #Section_Contact {
-    padding-top: 10vw;
-    border: solid red;
+    
     position: relative;
     height: 40vw;
     
 }
 
 #Section_Acceuil {
-    border: solid purple;
     position: relative;
     height: 50vw;
     
@@ -308,4 +304,36 @@ html{
     filter: brightness(50%);
     
     
+}
+
+.En_Tete {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
+
+.Titre {
+    flex-grow: 1;
+    margin : 1vw;
+    font-size: 1.2vw;
+
+    
+
+}
+
+.Ligne {
+    flex-grow: 1;
+    border-top-color: #C68E45;
+    border-top-style: solid;
+
+}
+
+footer {
+    height: 20vw;
+    background-color: var(--GrisLight);
+}
+
+.Titre_Footer {
+    width: 40%;
 }
