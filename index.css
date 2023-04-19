@@ -221,7 +221,7 @@ border-bottom: solid thin ;
 }
 
 #Section_Contact {
-    
+    padding-top: 10vw;
     position: relative;
     height: 40vw;
     
@@ -406,4 +406,27 @@ footer {
   .Photo3:hover {
     flex-grow: 3;
     transition: ease-in-out 0.7s;
+}
+
+#Formulaire {
+    border : solid red;
+    width: 50%;
+    display: flex;
+    flex-wrap:wrap ;
+   
+}
+
+.Texte_Contact {
+
+    width: 45%;
+   
+}
+
+.Corps_Contact {
+   display: flex   ;   
+   border : solid blue;
+}
+
+.Case_Form {
+    width: 50%;
 }
