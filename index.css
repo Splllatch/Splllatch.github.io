@@ -216,7 +216,7 @@ border-bottom: solid thin ;
 #Section_Galerie {
     padding-top: 10vw;
     position: relative;
-    height: 35vw;
+   
     
 }
 
@@ -336,4 +336,74 @@ footer {
 
 .Titre_Footer {
     width: 40%;
+}
+
+.Ligne_Photo {
+    display: flex;
+    height: 25vw;
+    margin-bottom: 2vw;
+    width: 76vw;
+    margin-left: auto;
+    margin-right: auto;  
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+    
+    
+   
+}
+
+.Photo1 { 
+  display: flex; 
+  background-image: url('images/Bibliothèque.jpg') ; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  flex-grow: 1;
+  transition: ease-in-out 0.7s;
+  
+}
+
+.Photo1:hover {
+    flex-grow: 3;
+    transition: ease-in-out 0.7s;
+}
+
+
+
+.Photo2 {
+    display: flex;
+    background-image: url('images/Meuble_Tele.jpg') ; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    flex-grow: 1;
+    background-position: center;
+    transition: ease-in-out 0.7s;
+    
+  
+  }
+
+  .Photo2:hover {
+    flex-grow: 3;
+    transition: ease-in-out 0.7s;
+}
+
+
+
+
+  .Photo3 {
+    display: flex;
+    justify-content: center;
+    background-image: url('images/71oDhbNTEkS._AC_SX679_.jpg') ; 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    flex-grow: 1;
+    transition: ease-in-out 0.7s;
+    
+  }
+
+  .Photo3:hover {
+    flex-grow: 3;
+    transition: ease-in-out 0.7s;
 }
