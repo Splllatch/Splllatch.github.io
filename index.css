@@ -225,7 +225,10 @@ border-bottom: solid thin ;
     position: relative;
     height: 40vw;
     
+    
 }
+
+
 
 #Section_Acceuil {
     position: relative;
@@ -318,7 +321,6 @@ html{
     margin : 1vw;
     font-size: 1.2vw;
 
-    
 
 }
 
@@ -350,6 +352,7 @@ footer {
     align-items: stretch;
     
     
+    
    
 }
 
@@ -361,6 +364,7 @@ footer {
   background-position: center;
   flex-grow: 1;
   transition: ease-in-out 0.7s;
+  border-right: 5px double  var(--GrisDark) ;
   
 }
 
@@ -379,6 +383,7 @@ footer {
     flex-grow: 1;
     background-position: center;
     transition: ease-in-out 0.7s;
+    
     
   
   }
@@ -400,6 +405,7 @@ footer {
     background-repeat: no-repeat; 
     flex-grow: 1;
     transition: ease-in-out 0.7s;
+    border-left: 5px double  var(--GrisDark) ;
     
   }
 
@@ -408,25 +414,181 @@ footer {
     transition: ease-in-out 0.7s;
 }
 
+
+.Photo4 { 
+    display: flex; 
+    background-image: url('images/71oDhbNTEkS._AC_SX679_.jpg') ; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    flex-grow: 1;
+    transition: ease-in-out 0.7s;
+    border-right: 5px double  var(--GrisDark) ;
+    
+  }
+  
+  .Photo4:hover {
+      flex-grow: 3;
+      transition: ease-in-out 0.7s;
+  }
+  
+  
+  
+  .Photo5 {
+      display: flex;
+      background-image: url('images/Bibliothèque.jpg') ;
+      background-size: cover;
+      background-repeat: no-repeat; 
+      flex-grow: 1;
+      background-position: center;
+      transition: ease-in-out 0.7s;
+      
+      
+    
+    }
+  
+    .Photo5:hover {
+      flex-grow: 3;
+      transition: ease-in-out 0.7s;
+  }
+  
+  
+  
+  
+    .Photo6 {
+      display: flex;
+      justify-content: center;
+      background-image: url('images/Meuble_Tele.jpg'); 
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; 
+      flex-grow: 1;
+      transition: ease-in-out 0.7s;
+      border-left: 5px double  var(--GrisDark) ;
+      
+    }
+  
+    .Photo6:hover {
+      flex-grow: 3;
+      transition: ease-in-out 0.7s;
+  }
+
+
+
 #Formulaire {
-    border : solid red;
+    
     width: 50%;
     display: flex;
     flex-wrap:wrap ;
+    margin : 1vw;
+    padding : 2vw;
+    background-color: var(--GrisLight);
+    border-radius: 10px;
+
    
 }
 
 .Texte_Contact {
 
     width: 45%;
+    
+    margin : 1vw;
+    padding : 2vw;
+    text-align: justify;
+    background-color: var(--GrisLight);
+    
    
 }
 
 .Corps_Contact {
-   display: flex   ;   
-   border : solid blue;
+   display: flex ;    
+   height: 20vw;
+   z-index: 999;
+   position: absolute;
+
+  
 }
 
 .Case_Form {
     width: 50%;
+}
+
+.Case_Form {
+    padding : 1vw;
+    width: 40%; 
+
+    
+}
+
+#DetailDemande {
+    width: 15vw;
+    height : 5vw;
+    margin-top: 0.5vw;
+    border : solid thin var(--Cuivre);
+    border-radius: 5px;
+}
+
+.CaseContact {
+   border-radius: 15px;
+   margin-left: 0.5vw;
+   border : solid thin var(--Cuivre);
+}
+
+#Categorie_Select {
+    border-radius: 5px;
+    margin-left: 0.5vw;
+    border : solid thin var(--Cuivre);
+    height: 2vw;
+    margin-top: 0.5vw;
+    width : 10vw;
+
+
+}
+
+
+
+#Envoyer{
+    text-align: center;
+   
+    margin-left: 0.5vw;
+    margin-top: 1.5vw;
+    height: 2vw;
+    width : 10vw;
+    font-size: 0.9vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--GrisDark);
+    color: var(--GrisLight);
+    border-radius: 0.5vw;
+    border: solid var(--GrisDark);
+
+
+
+}
+
+#Envoyer:hover {
+    color : var(--Cuivre);
+    border: solid thin var(--Cuivre);
+    background-color: var(--GrisLight);
+    cursor: pointer;
+}
+
+#Sapin {
+
+    width: 100%;
+    opacity: 0.6;
+    filter: grayscale(0.9);
+    filter: saturate(1);
+    position: absolute;
+    z-index: 0  ;
+    margin-top: 0vw;
+ 
+}
+
+#Titre_Section_Contact {
+
+    
+    width : 5vw ;
+
 }

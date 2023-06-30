@@ -77,28 +77,30 @@
         <div class="Titre">Galerie photos</div> 
     </div>
 
-    <div class="Ligne_Photo">
-        <div class="Photo1"></div>
-        <div class="Photo2"></div>
-        <div class="Photo3"></div>
-    </div>
+ <div class="Corps_Galerie">
 
-    <div class="Ligne_Photo">
-        <div class="Photo"></div>
-        <div class="Photo"></div>
-        <div class="Photo"></div>
-    </div>
+      <div class="Ligne_Photo">
+              <div class="Photo1"></div>
+            <div class="Photo2"></div>
+            <div class="Photo3"></div> 
+        </div> 
 
+        <div class="Ligne_Photo">
+            <div class="Photo4"></div>
+            <div class="Photo5"></div>
+            <div class="Photo6"></div>
+        </div>
+    </div> 
   
 
 
    </div>
 
    <div id="Section_Contact" class="Contact">
-
+    <img src="images/Sapin.jpg" id="Sapin" >
         <div class="En_Tete">
             <div class="Ligne"></div>
-            <div class="Titre">Contact</div> 
+            <div class="Titre" id="Titre_Section_Contact">Contact</div> 
         </div>
 
         <div class="Corps_Contact">
@@ -109,39 +111,35 @@
             <form method="get" action="" id="Formulaire">
 
             
-                <div class="Case_Form" ><label>Nom</label><input type="text"><br></div>
-                <div class="Case_Form" ><label>Prénom</label><input type="text"><br></div>
-                <div class="Case_Form" ><label>E-mail</E-mail></label><input type="text"><br></div>
-                <div class="Case_Form" ><label>Téléphone</label><input type="text"><br></div>
+                <div class="Case_Form" ><label>Nom</label><input type="text" class="CaseContact"><br></div>
+                <div class="Case_Form" ><label>Prénom</label><input type="text" class="CaseContact"><br></div>
+                <div class="Case_Form" ><label>E-mail</E-mail></label><input type="text" class="CaseContact"><br></div>
+                <div class="Case_Form" ><label>Téléphone</label><input type="text" class="CaseContact"><br></div>
 
-                <div class="Case_Form" ><label for="Categorie_Select">Mon Projet concerne</label>
+                <div class="Case_Form" id="Menu_Deroulant" ><label for="Categorie_Select">Mon Projet concerne : </label><br>
 
-                <select name="Categorie" id="Categorie_Select">
+                <select name="Categorie" id="Categorie_Select" >
                     <option value="">--Choisir une catégorie--</option>
                     <option value="Agencement">Agencement</option>
                     <option value="Cuisine">Cuisine</option>
                     <option value="Création_Meuble">Création de meuble</option>
                     <option value="Sol">Pose de parquet</option>
-                </select><br></div>
-
-                <label for="ameliorer">Des conseils pour améliorer mon site ?</label><br>
-                <textarea name="ameliorer" id="ameliorer"></textarea>
+                </select><br>
+                <input type="button" value="Envoyer" id="Envoyer">
+            
+            </div>
+                
+                <div class="Case_Form" id="Menu_Texte_Contact">
+                <label for="DetailDemande">Plus de détails sur votre demande :</label><br>
+                <textarea name="DetailDemande" id="DetailDemande"></textarea>
+            </div>
 
 
             </form>
         </div>
    </div>
 
-   <footer>
-
-    <div class="En_Tete">
-        <div class="Ligne"></div>
-        <div class="Titre_Footer"></div>
-         
-    </div>
-
-
-   </footer>
+ 
 
 
 

@@ -129,7 +129,7 @@ var ContactObserver = new IntersectionObserver(ContactIntersect, options);
 
 AcceuilObserver.observe(document.querySelector('.Acceuil'))
 RéalisationObserver.observe(document.querySelector('.Réalisation'))
-GalerieObserver.observe(document.querySelector('.Galerie'))
+GalerieObserver.observe(document.querySelector('.Ligne_Photo'))
 ContactObserver.observe(document.querySelector('.Contact'))
 
 
